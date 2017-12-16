@@ -1,2 +1,2 @@
-# simple-ftp
-Simple FTP client and server
+# Simple FTP example
+Simple FTP client and server written in python

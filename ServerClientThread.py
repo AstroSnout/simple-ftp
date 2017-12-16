@@ -31,7 +31,7 @@ class ServerClientThread(threading.Thread):
         # Send the data
         self.socket.send(send_data.encode())
         # You could also do something like this
-        # self.socket.send( ','.os.listdir(shared_dir).encode() )
+        # self.socket.send( '\n'.join(os.listdir(shared_dir)).encode() )
         # but that's not quite as readable
 
         if files:

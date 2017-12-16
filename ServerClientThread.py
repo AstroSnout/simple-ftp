@@ -26,7 +26,7 @@ class ServerClientThread(threading.Thread):
             os.mkdir(shared_dir)
         # Get files in the directory, returns a list
         files = os.listdir(shared_dir)
-        # Join the list into a string for sending if list is not empty else sent a "status message"
+        # Join the list into a string for sending if list is not empty else send a "status message"
         send_data = '\n'.join(files) if files else 'EMPTY'
         # Send the data
         self.socket.send(send_data.encode())
